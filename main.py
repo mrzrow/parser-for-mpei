@@ -25,13 +25,13 @@ def find_pos(soup, snils):
         if ab_agreed:
             count_agreed += 1
         if ab_snils == f'СНИЛС: {snils}':
-            print(f'Место в общем рейтинге: {ind + ind_add}')
-            print(f'Место при учете согласий: {count_agreed + 1}')
+            print(f'Place in the overall ranking: {ind + ind_add}')
+            print(f'Place considering agreements: {count_agreed + 1}')
             break
 
 
-snils = input('Введи снилс (без дефисов): ')
-sites = list(input('Введи ссылки на конкурсные списки каждого направления через пробел:\n').split())
+snils = input('Enter  your SNILS (without hyphens): ')
+sites = list(input('Enter links for each group with space:\n').split())
 print()
 for site in sites:
     src = requests.get(site)
@@ -40,4 +40,4 @@ for site in sites:
     print('..' * 20 +'\n')
     
 print('_' * 28 +'DONE' + '_' * 28 + '\n')
-input('_Нажми любую клавишу, чтобы закрыть программу_')
+input('_Press eny key to close the programm_')
