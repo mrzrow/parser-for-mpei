@@ -1,6 +1,16 @@
-# parser-for-mpei
+# MPEI Admissions Ranking Tool
 
-I made a simple parser for students who want to study at MPEI (МЭИ: https://mpei.ru/Pages/default.aspx).
-You just need to enter your SNILS (СНИЛС) and webpages that contain all applicants in your group (from this website: https://pk.mpei.ru/inform/list.html).
+### Description:
+This program displays your ranking among other applicants at the Moscow Power Engineering Institute (MPEI). It provides your ranking among all applicants, ranking among those who have not submitted original documents, and the remaining number of available budget-funded slots.
 
-The programm will show you your place in ranking and your place considering people who agreed.
+### Parameters:
+
+1) Link to the applicant table for the specific program
+2) Insurance Individual Ledger Account Number (СНИЛС)
+3) Total score in the Unified State Exam (ЕГЭ)
+
+### Output:
+
+1) Overall ranking among all applicants
+2) Ranking among applicants who have not submitted original documents
+3) Remaining number of budgetary slots available
